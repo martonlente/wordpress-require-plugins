@@ -28,7 +28,7 @@
 
     function dismissedSet() {
       // Create event $notice on click
-      $notice.on('click', function() {
+      $notice.on('click', 'button', function() {
         var id = $(this).attr('id');
 
         // Create cookie id -is-dismissed on click for 7 days
