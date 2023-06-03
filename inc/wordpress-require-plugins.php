@@ -1,6 +1,6 @@
 <?php
 /*!
- * WordPress Require plugins v1.0.0-alpha (https://martonlente.com/)
+ * WordPress Require plugins v1.0.0-beta (https://martonlente.com/)
  * Copyright 2023 Márton Lente
  * Licensed under Apache 2.0 (https://github.com/martonlente/wordpress-require-plugins/blob/main/LICENSE)
  */
@@ -58,6 +58,6 @@
 add_action('admin_notices', 'require_plugins');
 
 // Add js to prevent a message from re-appearing once the page re-loads, or another page is loaded
-wp_enqueue_script('my-theme-js-cookie', get_template_directory_uri() . '/node_modules/js-cookie/dist/js.cookie.min.js', array('jquery'), '1.0.0-alpha');
+wp_enqueue_script('my-theme-js-cookie', get_template_directory_uri() . '/node_modules/js-cookie/dist/js.cookie.min.js', array('jquery'), '1.0.0-beta');
 
-wp_enqueue_script('my-theme-wordpress-require-plugins', get_template_directory_uri() . '/js/wordpress-require-plugins.js', array('jquery'), '1.0.0-alpha');
+wp_enqueue_script('my-theme-wordpress-require-plugins', get_template_directory_uri() . '/js/wordpress-require-plugins.js', array('jquery'), '1.0.0-beta');
