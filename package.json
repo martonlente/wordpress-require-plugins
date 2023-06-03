@@ -1,0 +1,14 @@
+{
+  "name": "wordpress-require-plugins",
+  "version": "0.1.0",
+  "description": "A drop-in WordPress function, that requires plugin dependencies for custom themes as bespoke admin notices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "js-cookie": "^3.0.5"
+  }
+}
