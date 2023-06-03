@@ -1,6 +1,6 @@
 {
   "name": "wordpress-require-plugins",
-  "version": "1.0.0-beta",
+  "version": "1.0.0-beta.1",
   "description": "A drop-in WordPress function, that requires plugin dependencies for custom themes as bespoke admin notices",
   "main": "index.js",
   "scripts": {
