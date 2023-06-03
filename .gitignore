@@ -1,0 +1,12 @@
+# Ignore everything in the root except the "inc" directory
+/*
+!inc/
+
+# Ignore everything in the "inc" directory, except:
+# wordpress-require-plugins.php file
+inc/*
+!inc/wordpress-require-plugins.php
+
+# Track these files, if they exist
+!.gitignore
+!README.md
