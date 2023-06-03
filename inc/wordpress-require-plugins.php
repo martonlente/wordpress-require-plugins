@@ -26,13 +26,11 @@
       $required_plugin_name = $required_plugin_data['Name'];
 
       // If plugin is active, show notice success
-      /*
       ?>
       <div class="is-dismissible notice notice-success">
         <p><?php _e( 'Kötelező bővítmény aktív: '. $required_plugin_name, 'wordpress-require-plugins'); ?></p>
       </div>
     <?php
-    */
     else:
       // Set required plugin name
       $required_plugin_name = $required_plugin['name'];
