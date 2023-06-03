@@ -1,12 +1,20 @@
-# Ignore everything in the root except the "inc" directory
+# Ignore everything in the root except the "inc" directory, except:
+# inc, and js directories
 /*
 !inc/
+!js/
 
 # Ignore everything in the "inc" directory, except:
 # wordpress-require-plugins.php file
 inc/*
 !inc/wordpress-require-plugins.php
 
+# Ignore everything in the "js" directory, except:
+# wordpress-require-plugins.php file
+js/*
+!js/wordpress-require-plugins.js
+
 # Track these files, if they exist
 !.gitignore
+!package.json
 !README.md
