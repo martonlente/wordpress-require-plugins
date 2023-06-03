@@ -30,7 +30,7 @@
 
       // If plugin is active, show notice success
       ?>
-      <div class="is-dismissible js-notice notice notice-success" id="<?php echo 'js-notice-' . $index; ?>">
+      <div class="is-dismissible js-notice notice notice-success" id="<?php echo 'js-notice-' . $index; ?>" style="display: none;">
         <p>
           <?php _e( 'Kötelező bővítmény aktív: '. $required_plugin_name, 'my-theme'); ?>
         </p>

@@ -19,8 +19,9 @@
 
         // Check if notice is dismissed
         if (Cookies.get(id + '-is-dismissed') == 'true') {
-          // If is dismissed, hide
-          $this.css('display', 'none');
+        } else {
+          // If is not dismissed, show
+          $this.css('display', '');
         }
       });
     }
