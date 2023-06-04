@@ -9,11 +9,11 @@
   jQuery.noConflict();
 
   jQuery(document).ready(function($) {
-    // Create variable $notice
-    var $notice = $('.js-notice');
+    // Create variable $wpRequirePluginsNotice
+    var $wpRequirePluginsNotice = $('.wp-require-plugins-js-notice');
 
     function dismissedCheck() {
-      $notice.each(function() {
+      $wpRequirePluginsNotice.each(function() {
         var $this = $(this);
         var id = $this.attr('id');
 
@@ -27,10 +27,10 @@
     }
 
     function dismissedSet() {
-      // Create event $notice on click
-      $notice.on('click', 'button', function() {
+      // Create event $wpRequirePluginsNotice on click
+      $wpRequirePluginsNotice.on('click', 'button', function() {
         // Get id from button parent notice
-        var id = $(this).parent($notice)
+        var id = $(this).parent($wpRequirePluginsNotice)
           .attr('id');
 
         // Create cookie id -is-dismissed on click for 7 days
