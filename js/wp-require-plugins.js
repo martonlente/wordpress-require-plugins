@@ -33,8 +33,8 @@
         var id = $(this).parent($wpRequirePluginsNotice)
           .attr('id');
 
-        // Create cookie id -is-dismissed on click for 7 days
-        Cookies.set(id + '-is-dismissed', 'true', {expires: 7});
+        // Create cookie id -is-dismissed on click for 30 days
+        Cookies.set(id + '-is-dismissed', 'true', {expires: 30});
       });
     }
 
