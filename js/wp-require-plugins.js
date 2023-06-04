@@ -18,7 +18,7 @@
         var id = $this.attr('id');
 
         // Check if notice is dismissed
-        if (Cookies.get(id + '-is-dismissed') == 'true') {
+        if (Cookies.get(id) == 'is-dismissed') {
         } else {
           // If is not dismissed, show
           $this.css('display', '');
@@ -33,8 +33,8 @@
         var id = $(this).parent($wpRequirePluginsNotice)
           .attr('id');
 
-        // Create cookie id -is-dismissed on click for 30 days
-        Cookies.set(id + '-is-dismissed', 'true', {expires: 30});
+        // Set cookie id to 'is-dismissed' on click for 30 days
+        Cookies.set(id, 'is-dismissed', {expires: 30});
       });
     }
 
