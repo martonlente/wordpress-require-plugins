@@ -1,5 +1,5 @@
 /*!
- * WordPress Require plugins v1.0.0-beta.3 (https://martonlente.com/)
+ * WordPress Require plugins v1.0.0-beta.4 (https://martonlente.com/)
  * Copyright 2023 Márton Lente
  * Licensed under Apache 2.0 (https://github.com/martonlente/wordpress-require-plugins/blob/main/LICENSE)
  */
