@@ -5,14 +5,14 @@
 !js/
 
 # Ignore everything in the "inc" directory, except:
-# wordpress-require-plugins.php file
+# wp-require-plugins.php file
 inc/*
-!inc/wordpress-require-plugins.php
+!inc/wp-require-plugins.php
 
 # Ignore everything in the "js" directory, except:
-# wordpress-require-plugins.php file
+# wp-require-plugins.js file
 js/*
-!js/wordpress-require-plugins.js
+!js/wp-require-plugins.js
 
 # Track these files, if they exist
 !.gitignore
