@@ -25,20 +25,17 @@
       $required_plugin_data = get_plugin_data(ABSPATH . 'wp-content/plugins/' . $required_plugin['file_path']);
       $required_plugin_name = $required_plugin_data['Name'];
 
-      // Init static $index for ID js notice index
-      static $index = 0;
+      // Sanitize required plugin name for ID js notice
+      $required_plugin_slug = sanitize_title($required_plugin_name);
 
       // If plugin is active, show notice success
       ?>
-      <div class="is-dismissible js-notice notice notice-success" id="<?php echo 'js-notice-' . $index; ?>" style="display: none;">
+      <div class="is-dismissible js-notice notice notice-success" id="<?php echo 'js-notice-' . $required_plugin_slug; ?>" style="display: none;">
         <p>
           <?php _e( 'Kötelező bővítmény aktív: '. $required_plugin_name, 'my-theme'); ?>
         </p>
       </div>
     <?php
-    // Increment $index
-    $index++;
-
     else:
       // Set required plugin name
       $required_plugin_name = $required_plugin['name'];
