@@ -32,7 +32,7 @@
       ?>
       <div class="is-dismissible notice notice-success wp-require-plugins-js-notice" id="<?php echo 'wp-require-plugins-js-notice-' . $required_plugin_slug; ?>" style="display: none;">
         <p>
-          <?php _e( 'Kötelező bővítmény aktív: '. $required_plugin_name, 'my-theme'); ?>
+          <?php _e('Kötelező bővítmény aktív: '. $required_plugin_name, 'my-theme'); ?>
         </p>
       </div>
     <?php
@@ -44,7 +44,7 @@
       ?>
       <div class="notice notice-error">
         <p>
-          <?php _e( 'Kötelező bővítmény inaktív: ' . $required_plugin_name, 'my-theme'); ?>
+          <?php _e('Kötelező bővítmény inaktív: ' . $required_plugin_name, 'my-theme'); ?>
         </p>
       </div>
     <?php
