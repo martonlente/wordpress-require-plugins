@@ -15,7 +15,9 @@ WordPress Require plugins is a library that allows you to display a notice in th
 To use WordPress Require plugins, you need to download it and include it in your theme's `functions.php` file. You can do this by either editing the theme directory directly or using a child theme.
 
 1. Install [JavaScript Cookie](https://github.com/js-cookie/js-cookie) in the theme directory.
-`npm install js-cookie`
+```
+npm install js-cookie
+```
 2. Download WordPress Require plugins, and include `inc/wp-require-plugins.php` in your theme's or child theme's `functions.php` file.
 ```php
 require get_template_directory() . '/inc/wp-require-plugins.php';
