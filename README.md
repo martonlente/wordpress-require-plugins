@@ -40,6 +40,27 @@ $required_plugins = array(
   ));
 ```
 
+To get a list of all plugins in WordPress to find out their names, you can use the following code snippet in a template file:
+```php
+// Require plugin.php to retrieve an array of installed plugins
+require_once(ABSPATH . '/wp-admin/includes/plugin.php');
+
+// Get all plugins
+$plugins_all = get_plugins();
+
+// Get active plugins
+$plugins_active = get_option('active_plugins');
+
+// Loop through all plugins
+foreach ($plugins_all as $plugin_file => $plugin_info) {
+  // Check if plugin is active
+  if (in_array($plugin_file, $plugins_active)) {
+    // If plugin is active, print the name
+    echo $plugin_info['Name'] . '<br>';
+  }
+}
+```
+
 Once you have added and configured WordPress Require plugins, you should see notices in the admin dashboard of required plugins' if they're activated or not. The success notices will have a button to dismiss it. Dismissing a notice is saved for 30 days by default.
 
 ## Dependencies
