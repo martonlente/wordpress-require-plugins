@@ -8,7 +8,7 @@ WordPress Require plugins is a library that allows you to display a notice in th
 
 ## Version
 
-1.0.0-beta.4
+1.0.0
 
 ## Installation
 
