@@ -1,6 +1,7 @@
 # Ignore everything in the root except the "inc" directory, except:
-# inc, and js directories
+# img, inc, and js directories
 /*
+!img/
 !inc/
 !js/
 
