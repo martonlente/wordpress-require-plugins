@@ -18,7 +18,15 @@ To use WordPress Require plugins, you need to download it and include it in your
 ```
 npm install js-cookie
 ```
-2. Download WordPress Require plugins, and include `inc/wp-require-plugins.php` in your theme's or child theme's `functions.php` file.
+2. Download WordPress Require plugins into your theme. The following files should reside in your theme's root directory:
+```
+.
+├── inc
+│   └── wp-require-plugins.php
+└── js
+    └── wp-require-plugins.js
+```
+3. Include `inc/wp-require-plugins.php` in your theme's or child theme's `functions.php` file.
 ```php
 require get_template_directory() . '/inc/wp-require-plugins.php';
 ```
